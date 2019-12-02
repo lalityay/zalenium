@@ -18,7 +18,7 @@ hub:
   podAnnotations: {}
 
   ## The port which the hub listens on
-  port: 81
+  port: 4444
 
   ## Timeout for probe Hub liveness via HTTP request on Hub console
   livenessTimeout: 1
