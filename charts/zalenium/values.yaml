@@ -18,7 +18,7 @@ hub:
   podAnnotations: {}
 
   ## The port which the hub listens on
-  port: 4444
+  port: 81
 
   ## Timeout for probe Hub liveness via HTTP request on Hub console
   livenessTimeout: 1
@@ -58,7 +58,7 @@ hub:
   serviceType: "NodePort"
 
   ## Port on which K8s service is listening on. Zalenium WebUI will be available there.
-  svcPort: 80
+  svcPort: 81
 
   ## If serviceType is LoadBalancer:
   ##   Add list of IPs allowed to connect to the service
@@ -81,7 +81,7 @@ hub:
   ## https://github.com/zalando/zalenium/blob/master/docs/usage_examples.md
   desiredContainers: 2
   maxDockerSeleniumContainers: 10
-  videoRecordingEnabled: true
+  videoRecordingEnabled: false
   # the limits/requests below are for Selenium pods (containers)
   cpuRequest: 250m
   cpuLimit: 1000m
@@ -93,10 +93,10 @@ hub:
   seleniumImageName: "elgalu/selenium"
   maxTestSessions: 1
   newSessionsWaitTimeout: 600000
-  debugEnabled: false
+  debugEnabled: true
   keepOnlyFailedTests: false
   retentionPeriod: 3
-  sendAnonymousUsageInfo: true
+  sendAnonymousUsageInfo: false
   basicAuth:
     enabled: false
     username: "zalenium"
