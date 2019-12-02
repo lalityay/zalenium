@@ -58,7 +58,7 @@ hub:
   serviceType: "NodePort"
 
   ## Port on which K8s service is listening on. Zalenium WebUI will be available there.
-  svcPort: 81
+  svcPort: 80
 
   ## If serviceType is LoadBalancer:
   ##   Add list of IPs allowed to connect to the service
