@@ -1,7 +1,7 @@
 hub:
   ## The repository and image
   ## ref: https://hub.docker.com/r/dosel/zalenium
-  image: "dosel/zalenium"
+  image: "530710445070.dkr.ecr.us-east-1.amazonaws.com/reportbuilder-ecr-dev:zalenium"
 
   ## The tag for the image
   ## ref: https://hub.docker.com/r/dosel/zalenium/tags
@@ -90,7 +90,7 @@ hub:
   screenWidth: 1440
   screenHeight: 900
   timeZone: "UTC"
-  seleniumImageName: "elgalu/selenium"
+  seleniumImageName: "530710445070.dkr.ecr.us-east-1.amazonaws.com/reportbuilder-ecr-dev:selenium"
   maxTestSessions: 1
   newSessionsWaitTimeout: 600000
   debugEnabled: true
