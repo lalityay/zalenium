@@ -1,11 +1,11 @@
 hub:
   ## The repository and image
   ## ref: https://hub.docker.com/r/dosel/zalenium
-  image: "530710445070.dkr.ecr.us-east-1.amazonaws.com/reportbuilder-ecr-dev:zalenium"
+  image: "530710445070.dkr.ecr.us-east-1.amazonaws.com/reportbuilder-ecr-dev"
 
   ## The tag for the image
   ## ref: https://hub.docker.com/r/dosel/zalenium/tags
-  tag: "3"
+  tag: "zalenium"
 
   ## Specify a imagePullPolicy
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
